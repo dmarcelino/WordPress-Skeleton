@@ -1,0 +1,4 @@
+# Kill PHP Execution: https://codex.wordpress.org/Hardening_WordPress#WP-Config.php
+<Files ~ "\.ph(?:p[345]?|t|tml)$">
+   deny from all
+</Files>

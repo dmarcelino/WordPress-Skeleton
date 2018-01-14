@@ -1,3 +1,11 @@
+# Hide git files and folders
+RedirectMatch 404 /\.git
+
+# Hide files not concerning the user
+RedirectMatch 404 \.(htaccess|htpasswd|ini|log|sh|inc|bak|bkp|sql)$
+
+# Hardening WP: inspired by https://codex.wordpress.org/Hardening_WordPress#WP-Config.php
+RedirectMatch 404 wp-config.php
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
