@@ -6,7 +6,11 @@
 *.sql.gz
 ~*
 
+# Hidden system files
 .DS_Store
+[Tt]humbs.db
+.Trashes
+
 .maintenance
 
 wp-config.ini
