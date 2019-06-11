@@ -14,7 +14,7 @@ This is simply a skeleton repo for a WordPress site. Use it to jump-start your W
 
 ```
 # Clone repo and change git remote to your own
-git clone --recursive git@github.com:dmarcelino/WordPress-Skeleton.git
+git clone --recursive https://github.com/dmarcelino/WordPress-Skeleton.git
 git remote rm origin
 git remote add origin <your_git_repo>
 
