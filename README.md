@@ -35,6 +35,21 @@ cp -R wp/wp-content/themes/twentyseventeen wp-content/themes/
 * `.dev/fix-wordpress-permissions.sh`: script to fix WP permissions
 * `.dev/dump_db.sh`: script to perform a mysqldump using the config from `wp-config.ini`
 
+## Updates
+
+You can update WordPress code by checking out a new version. Example:
+
+```
+# Change WordPress version to a new one
+cd wp
+git fetch --tags
+git checkout <wp_version>  # example: 5.2.2
+cd ..
+
+# You may need to fix permissions afterwards
+.dev/fix-wordpress-permissions.sh
+```
+
 ## About
 
 This version of WordPress Skeleton is inspired on:
